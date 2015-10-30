@@ -1,1 +1,3 @@
-classes: 'teste'
+classes: 
+   - teste
+   - teste3
