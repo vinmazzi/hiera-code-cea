@@ -1,3 +1,4 @@
 classes: 
+        - 'profiles::base::cea'
         - teste
         - teste3
