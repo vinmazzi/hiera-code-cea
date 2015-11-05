@@ -2,3 +2,17 @@
 ntp_servers: 
  - '10.16.1.123'
  - '10.16.1.203'
+
+admin_group: 'supadmin'
+
+admin_users:
+  vmazzi:
+        groups: "%{hiera('admin_group')}"
+        rsa_key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDLE/nd+R19/dohbUPxaiCHreTBeE/hs1rbGeF8Png6Rl6L9sV2aJXPgJW+jNd/a5OGO2WJUTy3/UZsGscP2jO1tIGKbHhj5Wrztc0B6nGRCjYPQHGbK53Oh7jq4dQ4v0zUilmW9JarsNfB2IEy55O+J7eEwqmOzOdTIwozJQshjj2lPDt1dVJQAyiwQJxzP9V2C9usXkNGV9PSm+Iqyjk2l8xpQI7pbpzEVDzi5MeMQCGWnxYNkAbjSF0ubiSXEU55O7da9YrA1rN7ani+gOPtghK76TzWh87N1NeRc02vvxzlhdMn180QsGi6BXRdT9tj1U4eI+bLoDXlqKNX+DRv'
+  grillo:
+        groups: "%{hiera('admin_group')}"
+        rsa_key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQC9I59CRVxaqoHGyKm1AKJCkeZfc9oNPc+0gBxwxXv/OKymCTpkMmePGnAYllwnWo6JVWXLBdNYzFwwxlYTtMEo5k5xxTqQ130+YRcOz0ksWWxVT3b8y0OCuArnbDiRU4jbvZeufI+bcTbSajtw1J/T948x//PVxrDgkdp4ZYwFnifPwrtaKK0zLxvcIu32WV3wIwbCXvblB8+pcXQ4d7Y3gQThqz2bwW+KOxq94/tH61rSPyBaMvUL85mjL9qPPEOEAEfHCxyzpjin+VNtlwT93H+Bh+YDsf0SKylT/A8lLqyvTr/PVbYPcRdT7Xre7PThuNDPqq0wyjVqyR/3n5rB'
+
+  rsantos:
+        groups: "%{hiera('admin_group')}"
+        rsa_key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDx6sdCY8bCFZY/bqy310WHnQxc7ax1OEv8kkZQpDNEj0mls+pSp6AVAkAc9hkre1O8P+JVGOhP6krPfrMAx/RlnA0oaB/qkJOiPHXjM/YcEgqGGW4AeUbD5/9Vq/fK4m+NpYTpW2nSnOD+uJHbMoSexJZMbGiUq/W+NMuutEoWRP8m4OjzmAizJX7qhIJHyQoiEfjmAbhDFAoO1WDyslRZ/a/UlyRme4oPvdk6wmvwunDZkDp4GFpHJgh5A3ig5T6ELFX237uTH61Lz4c2R5VVPnFQerZlbTsCrYq5e8bDg0IJAX8JCNpad7k7e+HLXr1SF0KiTGVIScnxI3KbCCWj' 
